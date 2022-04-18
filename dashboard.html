@@ -1,0 +1,22 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<h1 style="text-align: center;">DASHBOARD</h1>
+</head>
+<body bgcolor="#fff">
+	<?php
+$connection = mysql_connect("localhost", "root", "");
+$db = mysql_select_db("united_", $connection);
+$query = mysql_query("select * from stundent", $connection);
+<span>Name:</span> <?php echo $row1['name']; ?>
+<span>E-mail:</span> <?php echo $row1['email']; ?>
+<span>Branch:</span> <?php echo $row1['branch']; ?>
+<span>Campus:</span> <?php echo $row1['campus']; ?>
+mysql_close($connection);
+?>
+
+</body>
+</html>
+

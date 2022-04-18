@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WELCOME</title>
+	<style>
+		body{
+			height: 735px;
+    background-image: linear-gradient(to bottom, #66e0ff, #80aaff);
+    background-repeat: no-repeat;
+      
+		}
+		  form {
+   padding-top: 30px;
+   width: 55%;
+   margin-left: 350px;
+   margin-top: 150px;
+  background-image: linear-gradient(to bottom, #66e0ff, #80aaff) ;
+}
+label{
+  margin-left: 20px;
+  color: #23395d;
+  font-size: 21px;
+  font-style: strong;
+}
+input[type=submit] {
+  background-color: #23395d;
+  color: white;
+  padding: 14px 2px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  float: center;
+  margin-left: 230px;
+  margin-top: 50px;
+}
+input[type=text] {
+  background-color: #black;
+  color: royalblue;
+  padding: 7px 2px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 60px;
+}
+input[type=int] {
+  background-color: #black;
+  color: royalblue;
+  padding: 7px 2px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  margin-left: 40px;
+}
+label{
+  color: #23395d;
+  font-size: 21px;
+  font-style: strong;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1 style="margin-top: 30px; margin-left: 490px; color: #23395d; font-size: 40px;">SELL YOUR ITEM HERE</h1>
+          </div>
+          <div class="panel-body">
+            <form action="sell.php" method="post">
+              <div class="form-group">
+                <label for="item">Item</label>
+                <input style="margin-left: 72px" 
+                  type="text"
+                  class="form-control"
+                  id="item"
+                  name="item"
+                />
+              </div>
+              <div class="form-group">
+                <label for="price">Price</label>
+            	<input style="margin-left: 68px" 
+            	type="int" 
+            	id="price" 
+            	name="price">
+                </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input style="margin-left: 62px" 
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="year">Year</label>
+                <input style="margin-left: 72px" 
+                  type="int"
+                  class="form-control"
+                  id="year"
+                  name="year"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact</label>
+                <input style="margin-left: 48px" 
+                  type="int"
+                  class="form-control"
+                  id="contact"
+                  name="contact"
+                />
+              </div>
+              <input type="submit" name="save" class="btn btn-primary" />
+     		</form>
+          </div>
+
+</body>
+</html>

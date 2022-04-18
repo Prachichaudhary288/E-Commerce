@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Buy Now</title>
+    <h1 style="text-align: center; font-size: 45px;">WHAT ARE YOU LOOKING FOR ?</h1>
+    <link rel = "icon" href = "pogo.jpg" type = "image/x-icon">
+    <style>
+    body{
+    background-image: linear-gradient(to bottom, #66e0ff, #80aaff)
+}
+    body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("shop1.jpg");
+
+  /* Control the height of the image */
+  min-height: 580px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75% 75%;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 197px;
+  max-width: 250px;
+  padding: 16px;
+  background-color: #f1f1f1;
+  background-attachment: transparent;
+}
+
+/* Full-width input fields */
+  input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: ghostwhite;
+}
+
+input[type=text]:focus {
+  background-color: ghostwhite;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="bg-img">
+  <form action="buy.php" class="container">
+    <h1>Search Here</h1>
+
+    <label for="item"><b>Item</b></label>
+    <input type="text" placeholder="Enter Item" name="item" required>
+    <button type="submit" class="btn">Search</button>
+  </form>
+</div>
+
+</body>
+</html>

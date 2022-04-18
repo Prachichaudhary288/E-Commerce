@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login Now</title>
+   <link rel = "icon" href = "pogo.jpg" type = "image/x-icon">
+  <style>
+  /*background color*/
+  body{
+    height: 750px;
+    background-mage: linear-gradient(to bottom, #DDD,#09606a);
+  }
+/* Bordered form */
+form {
+   padding-top: 100px;
+   width: 30%;
+   border-radius: 5%;
+   margin-left: 150px;
+  background-image: linear-gradient(to top, #09606a,#ddd);
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 14px 10px;
+  margin: 0px 0px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-image: linear-gradient(to bottom, #ffa500,#ed9121);
+  color: black;
+  padding: 14px 2px;
+  margin: 25px 10px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  float: center;
+  margin-left: 110px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+  color: #09606a;
+  background: var(#maroom);
+}
+/* Add padding to containers */
+.container {
+  padding: 8px;
+}
+/*paragraph font change*/
+p{
+  font-size: 25px;
+}
+
+</style>
+
+</head>
+<br></br>
+<br></br>
+
+<body ><img src="loginimg.jpg" style=" height: 600px;width: 600px; float: right;margin-right: 120px;margin-top: -30px; border-radius: 30px;">
+
+  <form action="login.php" method="post">
+  <div class="imgcontainer">
+    <p style="color: #09606a; margin-left: 50px;margin-top: -50px;font-size: 50px;">Welcome Back</p>
+    <p style="color: #ffa500;margin-left: 50px;margin-top: -45px;font-size: 20px;">To keep connected with us please login</p>
+  </div>
+  <div class="container" style="margin-left: 30px; margin-top: -20px;">
+    <label for="email"><h2 style="color: #09606a; font-size: 25px;">Email</h2></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><h2 style="color: #09606a">Password</h2></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+    <button type="submit">Login</button>
+  </div>
+</form>
+
+
+</body>
+</html>

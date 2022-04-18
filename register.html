@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel = "icon" href = "pogo.jpg" type = "image/x-icon">
+    <style>
+    body{
+    background-image: linear-gradient(to bottom right,  #ddd,#0ABAB5);
+    min-height:750px;
+      }
+      form {
+   padding-top: 30px;
+   width: 35%;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   margin-left: 150px;
+   margin-top: 50px;
+  background-image: linear-gradient(to bottom right, #ddd,#0ABAB5) ;
+}
+img{
+  border-radius: 39px;
+}
+label{
+  color: black;
+  font-size: large;
+  margin-left: 20px;
+}
+input[type=submit] {
+  background-color: darkblue;
+  color: white;
+  padding: 14px 2px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  float: center;
+  margin-left: 180px;
+}
+input[type=text] {
+  background-color: #black;
+  color: black;
+  padding: 7px 2px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 40px;
+}
+input[type=radio]{
+  margin-top: -10px;
+}
+input[type=password] {
+  background-color: #blanchedalmond;
+  color: royalblue;
+  padding: 7px 2px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  margin-left: 40px;
+}input[type=number] {
+  background-color: #black;
+  color: royalblue;
+  padding: 7px 2px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  margin-left: 40px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1 style="margin-top: 50px; margin-left: 220px;font-size: 50px; color: darkblue;">Registration Form</h1>
+          </div>
+          <img src="joinus.jpg" style=" height: 630px;width: 600px; float: right;margin-right: 40px;margin-top: -90px;">
+          <div class="panel-body">
+            <form action="register.php" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input style="margin-left: 72px" 
+                  placeholder="  Enter Your Name" 
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input style="margin-left: 140px; margin-top: 0px" 
+                      type="radio"
+                      name="gender"
+                      value="Male"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="Female"
+                      id="female"
+                    />Female</label
+                  >
+                </div>
+              <div class="form-group">
+                <label for="student_id">Student ID</label>
+                <input style="margin-left: 36px"
+                  placeholder="  Enter Student ID Number" 
+                  type="text"
+                  class="form-control"
+                  id="student_id"
+                  name="student_id"
+                />
+              </div>
+              <div class="form-group">
+                <label for="branch">Branch</label>
+                <input style="margin-left: 63px" 
+                  placeholder="  Enter Your Branch " 
+                  type="text"
+                  class="form-control"
+                  id="branch"
+                  name="branch"
+                />
+              </div>
+              <div class="form-group">
+                <label for="campus">Campus</label>
+                <input style="margin-left: 57px" 
+                placeholder="  Enter Your Campus Name" 
+                  type="text"
+                  class="form-control"
+                  id="campus"
+                  name="campus"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input style="margin-left: 72px" 
+                placeholder="  Enter Your E-mail" 
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input style="margin-left: 46px" 
+                placeholder="  Enter Your Password" 
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="year">Year</label>
+                <input style="margin-left: 82px" 
+                placeholder="  Enter Your Year" 
+                  type="number"
+                  class="form-control"
+                  id="year"
+                  name="year"
+                /><br><br><br>
+              </div>
+              <input type="submit" name="save" class="btn btn-primary" />
+            </form>
+          </div>
+          
+  </body>
+</html>
